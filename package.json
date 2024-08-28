@@ -8,6 +8,7 @@
     "db:studio": "prisma studio",
     "dev": "next dev",
     "postinstall": "prisma generate",
+  "seed": "node --experimental-specifier-resolution=node --loader ts-node/esm src/lib/seed.ts",
     "lint": "next lint",
     "start": "next start"
   },
@@ -60,9 +61,10 @@
     "prettier-plugin-tailwindcss": "^0.5.1",
     "prisma": "^5.1.1",
     "tailwindcss": "^3.3.3",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.1.6"
   },
+  "type": "module",
   "ct3aMetadata": {
     "initVersion": "7.23.2"
   },
